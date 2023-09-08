@@ -1,5 +1,11 @@
-const Subscription = require("./schema");
+
 module.exports = async (waw) => {
+	const Schema = waw.mongoose.Schema({
+		email: String
+	});
+	
+	const Subscription = waw.mongoose.model('Subscription', Schema);
+
 	const router = waw.router('/api/subscription');
 
 	router.post('/subscribe', async (req, res) => {
