@@ -1,5 +1,4 @@
 {
     "name": "Subscription",
-    "router": "index.js",
     "dependencies": {}
 }
