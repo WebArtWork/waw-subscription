@@ -5,7 +5,7 @@ class Subscription {
 
 	async subscribe(email) {
 		try {
-			await Http.post(`${this.api}/subscription`, {
+			await Http.post(`${this.api}/subscribe`, {
 				email
 			});
 
